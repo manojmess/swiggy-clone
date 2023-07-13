@@ -1,0 +1,150 @@
+export const categories = [
+    {
+        id: 1,
+        name: 'Pizza',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+    {
+        id: 2,
+        name: 'Burger',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+    {
+        id: 3,
+        name: 'Italian',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+    {
+        id: 4,
+        name: 'Chinese',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+    {
+        id: 5,
+        name: 'Noodles',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+    {
+        id: 6,
+        name: 'Sweets',
+        image: require('../assets/images/pizzaIcon.png'),
+    },
+
+]
+
+
+export const featured = {
+    id: 1,
+    title: 'Urban Flavours',
+    description: 'soft and tender fried chicken',
+    restaurants: [
+        {
+            id: 1,
+            name: 'Pizza Hut',
+            image: require('../assets/images/pizza.png'),
+            description: 'Urban Flavours pizzas',
+            lng: -85.5324269,
+            lat: 38.2145602,
+            address: 'Bigbazar, Ram Mandir Sqr.',
+            stars: 4,
+            reviews: '4.4k',
+            category: 'Pizza, Italian',
+            dishes: [
+                {
+                   id: 1,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 2,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 3,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+            ]
+    
+        },
+        {
+            id: 2,
+            name: 'Pizza Hut',
+            image: require('../assets/images/pizza.png'),
+            description: 'Urban Flavours pizzas',
+            lng: -85.5324269,
+            lat: 38.2145602,
+            address: 'Bigbazar, Ram Mandir Sqr.',
+            stars: 4,
+            reviews: '4.4k',
+            category: 'Pizza, Italian',
+            dishes: [
+                {
+                   id: 1,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 2,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 3,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+            ]
+    
+        },
+        {
+            id: 3,
+            name: 'Pizza Hut',
+            image: require('../assets/images/pizza.png'),
+            description: 'Urban Flavours pizzas',
+            lng: -85.5324269,
+            lat: 38.2145602,
+            address: 'Bigbazar, Ram Mandir Sqr.',
+            stars: 4,
+            reviews: '4.4k',
+            category: 'Pizza, Italian',
+            dishes: [
+                {
+                   id: 1,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 2,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+                {
+                   id: 3,
+                   name: 'pizza',
+                   description: 'cheezy garlic pizza',
+                   price: 10,
+                   image:  require('../assets/images/pizzaDish.png')
+                },
+            ]
+    
+        }
+    ]
+}
