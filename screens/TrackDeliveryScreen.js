@@ -9,7 +9,7 @@ export default function TrackDeliveryScreen() {
     const resturant = featured.restaurants[0]
     const navigation = useNavigation()
     const handleCancel = () => {
-
+        navigation.navigate('Home')
     }
     return (
         <View className="flex-1">
