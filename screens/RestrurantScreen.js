@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, StatusBar } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation, useRoute } from '@react-navigation/native'
@@ -6,21 +6,23 @@ import { ScrollView } from 'react-native';
 import * as Icon from "react-native-feather";
 import { themeColor } from '../themes';
 import Dieshes from '../components/Dieshes';
+import Cart from '../components/Cart';
+import BackButoon from '../components/BackButoon';
 export default function RestrurantScreen() {
   const { params } = useRoute();
-  const navigation = useNavigation()
+
   let item = params
   return (
     <View>
+      <Cart />
+      <StatusBar style="light" />
       <ScrollView>
         <View className="relative">
           <Image source={item.image} className="w-full h-72" />
-          <TouchableOpacity className="bg-gray-800 rounded-full p-2 shadow-lg absolute top-14 left-5"
-            onPress={() => navigation.goBack()}>
-            <Icon.ArrowLeft stroke={themeColor.bgColor(1)} strokeWidth={4} />
-          </TouchableOpacity>
+          {/* Back button */}
+          <BackButoon />
           <View className="bg-white -mt-12 pt-3" style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}>
-            <Text className="text-3xl font-bold p-2 left-2 ">
+            <Text className="text-3xl font-bold p-2 left-2 " style={{ color: themeColor.bgColor(1) }}>
               {item.name}
             </Text>
             <View className="flex-row space-x-1 left-2">
@@ -56,6 +58,8 @@ export default function RestrurantScreen() {
           </View>
         </View>
       </ScrollView>
+
+ 
     </View>
   )
 }

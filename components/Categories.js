@@ -19,11 +19,12 @@ export default function Categories() {
                     let textClass = isActive ? 'font-semibold text-gray-800' : 'text-gray-500'
 
                     return (
-                        <View key={index} className="flex justify-center items-center mr-3 rounded-full" >
+                        <View key={cat.id} className="flex justify-center items-center mr-3 rounded-full" >
                             <TouchableOpacity
+                            style={{backgroundColor:themeColor.bgColor(1)}}
                                 onPress={() => setActiveCat(cat._id)}
                                 className={"p-1" + btnClass}>
-                                <Image style={{ width: 55, height: 55 }} className='shadow  rounded-full  bg-gray-800' source={cat.image}
+                                <Image style={{ width: 55, height: 55 }} className='shadow  rounded-full  ' source={cat.image}
                                 />
                             </TouchableOpacity>
                             <Text className={"text-sm" + textClass}>{cat.name}</Text>

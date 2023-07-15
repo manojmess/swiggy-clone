@@ -22,7 +22,7 @@ export default function HomeScreen() {
                         <Text className="text-gray-600 text-[11px]">New York, NYC</Text>
                     </View>
                 </View>
-                <View style={{ backgroundColor: themeColor.bgColor(1) }} className="p-3 rounded-t-3xl">
+                <View style={{ backgroundColor: themeColor.bgColor(1) }} className="p-3 rounded-full">
                     <Icon.Sliders stroke='white' height={25} width={25} strokeWidth={2.5} />
                 </View>
             </View>
